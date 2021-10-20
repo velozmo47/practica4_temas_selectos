@@ -21,7 +21,7 @@ public class Sphere360 : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            if (Input.GetTouch(0).tapCount == 1)
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
                 NextMaterial();
             }
